@@ -1,0 +1,21 @@
+.topo{
+    background-color: gray;
+}
+
+.topo h1{
+    float: left;
+}
+
+.topo h2{
+    float: right;
+}
+
+#filtros{
+    background-color: #D8D8D8;
+    min-height: 500px;
+
+}
+
+.produtos{
+    padding-top: 5px;
+}

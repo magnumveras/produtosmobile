@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Made in Astec</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row topo">
+            <div class="col-12">
+                <h1>Made in Astec</h1>
+                <h2>Carrinho</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 menu border border-dark">
+                <ul class="nav justify-content-center">
+                    <div class="col-6 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    </div>
+                    <div class="col-6 text-center border-left border-dark">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Carrinho</a>
+                    </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="row col-offset-2">
+            <div class="col-12 col-sm-2 border border-dark border-top-0 text-center" id="filtros">
+                <h3>Filtros</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="preco-min">Preço Mínimo: R$ {{min}}</label>
+                        <input type="range" id="preco-min" class="form-control" min="0" max="10000" value="0" ng-model="min"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="preco-max">Preço Máximo: R$ {{max}}</label>
+                        <input type="range" id="preco-max" class="form-control" min="0" max="10000" value="10000" ng-model="max"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="Categoria">Categorias:</label>
+                        <select class="form-control" id="categorias">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Pesquisar">Pesquisar:</label>
+                        <input type="produto" class="form-control" id="pesquisaproduto" placeholder="Digite Produto">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Aplicar</button>
+                </form>
+            </div>
+       
+            <div class="col-12 col-sm-10 produtos text-center col-offset-1">
+                <div class = "row">
+                    <div class="col-12 col-sm-4">
+                        <form class="form-group border border-dark">
+                            <h4>Produto 1</h4>
+                            <div class="preco">
+                                <label>Preço: R$ 0000,00</label>
+                            </div>
+                            <div class="categoria">
+                                <label>Categoria: </label>
+                            </div>
+                            <a href="#">Descrição...</a>
+                        </form>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <form class="form-group border border-dark">
+                            <h4>Produto 1</h4>
+                            <div class="preco">
+                                <label>Preço: R$ 0000,00</label>
+                            </div>
+                            <div class="categoria">
+                                <label>Categoria: </label>
+                            </div>  
+                            <a href="#">Descrição...</a>
+                        </form>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <form class=" form-group border border-dark">
+                            <h4>Produto 1</h4>
+                            <div class="preco">
+                                <label>Preço: R$ 0000,00</label>
+                            </div>
+                            <div class="categoria">
+                                <label>Categoria: </label>
+                            </div>
+                            <a href="#">Descrição...</a>
+                        </form>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <form class=" form-group border border-dark">
+                            <h4>Produto 1</h4>
+                            <div class="preco">
+                                <label>Preço: R$ 0000,00</label>
+                            </div>
+                            <div class="categoria">
+                                <label>Categoria: </label>
+                            </div>
+                            <a href="#">Descrição...</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

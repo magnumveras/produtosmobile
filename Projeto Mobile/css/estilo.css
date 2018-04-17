@@ -32,3 +32,19 @@
 .produtos{
     padding-top: 5px;
 }
+
+.detalhesprod{
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.descricaoproduto{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 80%;
+    background-color: #D3D3D3;
+}

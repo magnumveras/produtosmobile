@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -22,7 +20,43 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <form action="#">
+                            <div class="detalhesprod form-group">
+                                <div class="nomeproduto">
+                                    <label for="nomeproduto">Nome do Produto</label>
+                                </div>
+                                <div class="valorproduto">
+                                    <label for="valorproduto">R$ 1234,000</label>
+                                </div>
+                                <div class="categoriaproduto">       
+                                    <label for="categoriaproduto">Categoria</label>
+                                </div>
+                                <div class="qtdproduto form-inline form-group">
+                                    <label for="qtdproduto">Quantidade: </label>
+                                    <input type="number" min="0" class="form-control" id="qtdproduto" ng-model="produtoQtd">
+                                </div>
+                                <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button" ng-click="comprarProduto()">Comprar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="descricaoproduto border border-dark rounded text-center">
+                            <label>Produto 1</label>
+                            <p>Produto 1 é aasdasdadsasdasdasdasda
+                                sdasdasdasdasdasdasdasaasdasdadsas
+                                dasdasdasdasdasdasdasdasdasdasdasa
+                                dasdasdasdadsasdasdasdasdasdasdasd
+                                asdasdasdasdasdasdadadasdasdasdas.
+                                 Asdasdasdasdasdasdasdasdasdasdasd
+                                dadasdasdasasdasdasdasdasdasdasdas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="row footer order border-dark rounded text-center">
                     <div class="col-12">
                         <p>Copyright &copy; 2018 - Todos os direitos reservados.</p>

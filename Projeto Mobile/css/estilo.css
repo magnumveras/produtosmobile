@@ -2,12 +2,25 @@
     background-color: gray;
 }
 
-.topo h1{
-    float: left;
+.footer{
+    background-color: gray;
 }
 
-.topo h2{
+.topo h1{
+    float: left;
+    color: black;
+}
+
+.carrinho {
     float: right;
+}
+
+.carrinho img{
+    max-width:45px;
+    max-height:45px;
+    width: auto;
+    height: auto;
+    padding-top: 5px;
 }
 
 #filtros{

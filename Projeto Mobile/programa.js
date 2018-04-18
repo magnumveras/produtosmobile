@@ -31,9 +31,11 @@ app.controller('principal', function($scope, $http){
             i++;
         }
     }
+
+    //alert($scope.produtos[i].nome + " " + $scope.produtos[i].valor + " " + $scope.produtos[i].categoria + " " + $scope.produtos[i].desc)
     
     window.sessionStorage.setItem('produto', JSON.stringify($scope.produtos[i]));
-    //alert("Passou!!!");
+    //alert("Passou: " + $scope.produtos[i].desc);
     $scope.teste = {};
     $scope.produtodesc = JSON.parse(sessionStorage.getItem('produto'));    
     window.location.href='descricao.html';
@@ -49,7 +51,7 @@ appdesc.controller('descricao', function($scope, $http){
     $scope.produtodesc = {};
                $scope.init = function(){                   
                    $scope.produtodesc = JSON.parse(window.sessionStorage.getItem('produto'));
-                   //alert("Página descrição" + $scope.produtodesc.nome);
+                   //alert("Página descrição" + $scope.produtodesc.desc);
                    window.sessionStorage.removeItem('produto');
                }
     $scope.init();

@@ -2,98 +2,117 @@
         {
             "nome": "God of War",
             "valor": 215.99,
-            "categoria": "Jogos"
+            "categoria": "Jogos",
+            "desc": "God of War é uma série de jogos eletrônicos de ação-aventura vagamente baseado nas mitologias grega e nórdica criada por David Jaffe. Iniciada em 2005, a série tornou-se carro-chefe para a marca PlayStation, que consiste em sete jogos em várias plataformas. Um oitavo título está em desenvolvimento"
         },
         {
             "nome": "Far Cry 4",
             "valor": 215.99,
-            "categoria": "Jogos"
+            "categoria": "Jogos",
+            "desc": "Far Cry 4 é um jogo eletrônico de tiro em primeira pessoa jogado em mundo aberto que foi produzido pela Ubisoft Montreal juntamente com a Ubisoft Red Storm, a Ubisoft Toronto, a Ubisoft Shanghai e a Ubisoft Kiev"
         },
         {
             "nome": "GTA V",
             "valor": 99.21,
-            "categoria": "Jogos"
+            "categoria": "Jogos",
+            "desc": "Grand Theft Auto V é um jogo eletrônico de ação-aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games. "
         },
         {
             "nome": "Overwatch",
             "valor": 150.99,
-            "categoria": "Jogos"
+            "categoria": "Jogos",
+            "desc": "Overwatch é um jogo eletrônico multijogador de tiro em primeira pessoa desenvolvido e publicado pela Blizzard Entertainment. Revelado na BlizzCon de 2014, o jogo enfatiza a jogabilidade cooperativa usando um elenco de vários 'heróis', cada um com suas próprias habilidades e funções dentro de uma equipe."
         },
         {
             "nome": "Assassins Creed Origins",
             "valor": 150.99,
-            "categoria": "Jogos"
+            "categoria": "Jogos",
+            "desc": "Assassin's Creed Origins é um jogo eletrônico de ação-aventura, produzido pela Ubisoft Montreal e publicado pela Ubisoft. É o décimo título principal da série Assassin's Creed e tem lançamento previsto para 27 de Outubro de 2017, para Microsoft Windows, PlayStation 4 e Xbox One."
         },
         {
             "nome": "Outlast 2",
             "valor": 70.99,
-            "categoria": "Jogos"
+            "categoria": "Jogos",
+            "desc": "É a sequência do jogo eletrônico de 2013 Outlast e apresenta um jornalista chamado Blake Langermann, junto com sua esposa Lynn, percorrendo o deserto do Arizona para explorar o assassinato de uma mulher grávida, apenas conhecida como Jane Doe"
         },
         {
             "nome": "The Legend Of Zelda Breath Of The Wild",
             "valor": 250.00,
-            "categoria": "Jogos"
+            "categoria": "Jogos",
+            "desc": "É o décimo nono título da série The Legend of Zelda e foi lançado mundialmente para Wii U e Nintendo Switch em 3 de março de 2017. A história segue o protagonista Link, que acorda em uma Hyrule devastada após cem anos de sono e precisa recuperar suas memórias e derrotar o grande mal causado pela chegada de Calamity Ganon."
         },
         {
             "nome": "Destiny 2",
             "valor": 200.00,
-            "categoria": "Jogos"
+            "categoria": "Jogos",
+            "desc": "A história de Destiny decorre num período de setecentos anos no futuro, num ambiente pós-apocalíptico, num universo onde os humanos se espalharam e começaram a colonizar planetas no Sistema Solar. Um evento conhecido como 'o Colapso' fez as colónias desaparecerem misteriosamente, pondo um fim à chamada Era Dourada, e colocando a humanidade muito perto da extinção."
         },
         {
             "nome": "Dark Souls 3",
             "valor": 100.99,
-            "categoria": "Jogos"
+            "categoria": "Jogos",
+            "desc": "Dark Souls III recebeu aclamação por parte da critica especializada. Os elogios focarem-se sobretudo nos visuais e nas mecânicas de combate, fazendo lembrar o ritmo rápido de Bloodborne, o jogo anterior da From Software. No site de análises agregadas Metacritic a versão Microsoft Windows conseguiu a pontuação de 90/100, o que indica “aclamação universal”."
         },
 
         {
             "nome": "Controle Playstation 4",
             "valor": 140.00,
-            "categoria": "Acessórios"
+            "categoria": "Acessórios",
+            "desc": "Afastando-se da arquitectura Cell da sua antecessora, a PlayStation 4 é a primeira da série da Sony que apresenta arquitectura x86, mais especificamente uma Unidade de Processamento Acelerado AMD x86-64, uma plataforma amplamente usada e comum em muitos dos PCs modernos."
         },
         {
             "nome": "Controle Xbox One",
             "valor": 125.75,
-            "categoria": "Acessórios"
+            "categoria": "Acessórios",
+            "desc": "O Xbox One apresenta jogos com gráficos de alta definição superiores aos vistos no seu antecessor e similares aos apresentados pelo seu maior concorrente, o PlayStation 4."
         },
         {
             "nome": "Teclado Hyperx Alloy FPS",
             "valor": 560.00,
-            "categoria": "Acessórios"
+            "categoria": "Acessórios",
+            "desc": "Teclado Gamer última geração"
         },
         {
             "nome": "Mouse Corsair Harpoon RGB",
             "valor": 160.00,
-            "categoria": "Acessórios"
+            "categoria": "Acessórios",
+            "desc": "Mouse Gamer última geração"
         },
         {
             "nome": "Headset Razer Kraken Pro",
             "valor": 300.90,
-            "categoria": "Acessórios"
+            "categoria": "Acessórios",
+            "desc": "Headset de última tecnologia perfeito para deixar seu ambiente de jogo muito mais real!"
         },
 
         {
             "nome": "Playstation 4 Pro",
             "valor": 1850.99,
-            "categoria": "Consoles"
+            "categoria": "Consoles",
+            "desc": "O PlayStation 4 Pro ou simplesmente PS4 Pro (anunciado originalmente com o codinome Neo) também foi revelado em 7 de Setembro de 2016. Seu modelo tem o número de linha CUH-7000. "
         },
         {
             "nome": "Playstation 4",
             "valor": 1300.90,
-            "categoria": "Consoles"
+            "categoria": "Consoles",
+            "desc": " A PlayStation 4 é a primeira consola da Sony a ser oficialmente e legalmente editada na China desde a PlayStation 2, depois do levantamento da proibição que durou 14 anos. A PlayStation 4 compete directamente com a Wii U da Nintendo e com a Xbox One da Microsoft, como uma das consolas da oitava geração."
         },
         {
             "nome": "Xbox One",
             "valor": 1074.90,
-            "categoria": "Consoles"
+            "categoria": "Consoles",
+            "desc": "O Xbox One foi anunciado no dia 21 de maio de 2013, apresentado ao público pelo presidente de negócios de entretenimento interativo da Microsoft, Don Mattrick, em um evento dchamado Xbox Reveal, como o sucessor do Xbox 360. Ele compete com o Nintendo Wii U e o PlayStation 4."
         },
         {
             "nome": "Xbox One X",
             "valor": 2650.55,
-            "categoria": "Consoles"
+            "categoria": "Consoles",
+            "desc": "Xbox One X"
         },
         {
             "nome": "Nintendo Switch",
             "valor": 1400.00,
-            "categoria": "Consoles"
+            "categoria": "Consoles",
+            "desc": "O Switch se trata de um console híbrido semelhante a um tablet, o qual pode ser acoplado a um dock e, assim, ser transformado em um console de mesa. O console também conta com dois controles sem fio acopláveis de cada lado, chamados pela Nintendo de Joy-Con, que podem ser usados individualmente ou ser acoplados à unidade principal (no modo portátil) ou a uma base semelhante a um gamepad (no modo caseiro)"
         }
     ]

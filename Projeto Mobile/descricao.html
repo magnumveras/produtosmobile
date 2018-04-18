@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Descrição do Produto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -39,7 +39,7 @@
                                     <input type="number" min="0" class="form-control" id="qtdproduto" ng-model="produtoQtd">
                                 </div>
                                 <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary" type="button" ng-click="comprarProduto()">Comprar</button>
+                                        <button class="btn btn-outline-secondary" type="button" ng-click="comprarproduto(produtodesc.nome, produtodesc.valor, produtoQtd)">Comprar</button>
                                 </div>
                             </div>
                         </form>

@@ -31,6 +31,12 @@
 
 .produtos{
     padding-top: 5px;
+    position: absolute;
+    margin:auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .detalhesprod{
@@ -47,4 +53,8 @@
     width: 90%;
     height: 85%;
     background-color: #D3D3D3;
+}
+
+.tabelacarrinho{
+    margin-top: 10%;
 }

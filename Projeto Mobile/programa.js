@@ -55,6 +55,54 @@ appdesc.controller('descricao', function($scope, $http){
                    window.sessionStorage.removeItem('produto');
                }
     $scope.init();
+
+    $scope.comprarproduto = function(nomeproduto, valorproduto, produtoqtd){
+        var valortotal = valorproduto * produtoqtd;
+        $scope.itemcarrinho = [
+            {
+                "nome": nomeproduto,
+                "valorunitario": valorproduto,
+                "quantidade": produtoqtd,
+                "valortotal": valortotal
+            },
+        ];
+        
+
+        window.sessionStorage.setItem('itemcarrinho', JSON.stringify($scope.itemcarrinho));    
+        window.location.href='carrinho.html';
+        //alert(nomeproduto + " " + valorproduto + " " + produtoqtd + " " + valortotal);
+        //alert($scope.itemcarrinho[0].nome + " " + $scope.itemcarrinho[0].valortotal);
+    }
+});
+
+
+//Controller de carrinho
+var appcar = angular.module("ProdutoCarrinho", []);
+
+//var arraycarrinho;
+appcar.controller('carrinho', function($scope, $http){
+    $scope.carrinho = [];
+
+    $scope.init = function(){                   
+        $scope.carrinho = JSON.parse(window.sessionStorage.getItem('itemcarrinho'));
+
+        //alert(arraycarrinho[0].nomeproduto);
+
+        window.sessionStorage.removeItem('itemcarrinho');
+    }
+    $scope.init();
+    
+    //Laço para preenchimento de tabela
+    for(var i = 0; i < $scope.carrinho.length; i++){
+        var html = '<th>' + $scope.carrinho[i].nome + '</th>' + 
+                   '<th>' + $scope.carrinho[i].valorunitario + '</th>' +
+                   '<th>' + $scope.carrinho[i].quantidade +  '</th>' + 
+                   '<th>' + $scope.carrinho[i].valortotal + '</th>' +
+                   '<th scope="row"><button type="button" class="btn btn-danger">X</button>'
+        
+        $("#bodytabela").append('<tr>' + html + '</tr>');
+    }
+
 });
 
 $(document).ready(function(){

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="loja" ng-controller="principal">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -34,84 +35,49 @@
                     </div>
                     <div class="form-group">
                         <label for="Categoria">Categorias:</label>
-                        <select class="form-control" id="categorias">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                        <select class="form-control" id="categorias" ng-model="categoria" >
+                            <option value="">Selecione</option>
+                            <option value="Acessórios">Acessórios</option>
+                            <option value="Consoles">Consoles</option>
+                            <option value="Jogos">Jogos</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="Pesquisar">Pesquisar:</label>
-                        <input type="produto" class="form-control" id="pesquisaproduto" placeholder="Digite Produto">
+                        <input type="produto" class="form-control" id="pesquisaproduto" placeholder="Digite Produto" ng-model="search">
                     </div>
-                    <button type="submit" class="btn btn-primary">Aplicar</button>
                 </form>
             </div>
-       
-            <div class="col-12 col-sm-10 produtos text-center col-offset-1">
+            <div class="col-12 col-sm-10 produtos text-center col-offset-2">
                 <div class = "row">
-                    <div class="col-12 col-sm-4">
-                        <form class="form-group border border-dark rounded">
-                            <h4>Produto 1</h4>
-                            <div class="preco">
-                                <label>Preço: R$ 0000,00</label>
+                    <div class="col-12 col-sm-4" ng-repeat="p in produtos | orderBy: 'nome' |  filter:search | filter: minmax | filter: categoria ">
+                        <form class="rounded form-group">
+                        <div class="card" style="max-width: 15rem; min-height: 15rem">
+                          <!-- img class="card-img-top" src="..." alt="Card image cap" -->
+                            <div class="card-body">
+                              <h5 class="card-title">{{p.nome}}</h5>
+                              <p class="card-text">{{p.categoria}}</p>
+                              <p class="card-text">{{p.valor}}</p>
+                              <a href="descricao.html" class="btn btn-primary">Descrição</a>
                             </div>
-                            <div class="categoria">
-                                <label>Categoria: </label>
-                            </div>
-                            <a href="descricao.html">Descrição...</a>
-                        </form>
-                    </div>
-                    <div class="col-12 col-sm-4">
-                        <form class="form-group border border-dark rounded">
-                            <h4>Produto 1</h4>
-                            <div class="preco">
-                                <label>Preço: R$ 0000,00</label>
-                            </div>
-                            <div class="categoria">
-                                <label>Categoria: </label>
-                            </div>  
-                            <a href="descricao.html">Descrição...</a>
-                        </form>
-                    </div>
-                    <div class="col-12 col-sm-4">
-                        <form class=" form-group border border-dark rounded">
-                            <h4>Produto 1</h4>
-                            <div class="preco">
-                                <label>Preço: R$ 0000,00</label>
-                            </div>
-                            <div class="categoria">
-                                <label>Categoria: </label>
-                            </div>
-                            <a href="descricao.html">Descrição...</a>
-                        </form>
-                    </div>
-                    <div class="col-12 col-sm-4">
-                        <form class=" form-group border border-dark rounded">
-                            <h4>Produto 1</h4>
-                            <div class="preco">
-                                <label>Preço: R$ 0000,00</label>
-                            </div>
-                            <div class="categoria">
-                                <label>Categoria: </label>
-                            </div>
-                            <a href="descricao.html">Descrição...</a>
+                        </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row footer order border-dark rounded text-center">
+        <div class="row footer rounded text-center">
             <div class="col-12">
                 <p>Copyright &copy; 2018 - Todos os direitos reservados.</p>
             </div>
         </div>
     </div>
     <!--Teste de commit -->
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="programa.js">
+
+    </script>
 </body>
 </html>

@@ -1,0 +1,99 @@
+[
+        {
+            "nome": "God of War",
+            "valor": 215.99,
+            "categoria": "Jogos"
+        },
+        {
+            "nome": "Far Cry 4",
+            "valor": 215.99,
+            "categoria": "Jogos"
+        },
+        {
+            "nome": "GTA V",
+            "valor": 99.21,
+            "categoria": "Jogos"
+        },
+        {
+            "nome": "Overwatch",
+            "valor": 150.99,
+            "categoria": "Jogos"
+        },
+        {
+            "nome": "Assassins Creed Origins",
+            "valor": 150.99,
+            "categoria": "Jogos"
+        },
+        {
+            "nome": "Outlast 2",
+            "valor": 70.99,
+            "categoria": "Jogos"
+        },
+        {
+            "nome": "The Legend Of Zelda Breath Of The Wild",
+            "valor": 250.00,
+            "categoria": "Jogos"
+        },
+        {
+            "nome": "Destiny 2",
+            "valor": 200.00,
+            "categoria": "Jogos"
+        },
+        {
+            "nome": "Dark Souls 3",
+            "valor": 100.99,
+            "categoria": "Jogos"
+        },
+
+        {
+            "nome": "Controle Playstation 4",
+            "valor": 140.00,
+            "categoria": "Acessórios"
+        },
+        {
+            "nome": "Controle Xbox One",
+            "valor": 125.75,
+            "categoria": "Acessórios"
+        },
+        {
+            "nome": "Teclado Hyperx Alloy FPS",
+            "valor": 560.00,
+            "categoria": "Acessórios"
+        },
+        {
+            "nome": "Mouse Corsair Harpoon RGB",
+            "valor": 160.00,
+            "categoria": "Acessórios"
+        },
+        {
+            "nome": "Headset Razer Kraken Pro",
+            "valor": 300.90,
+            "categoria": "Acessórios"
+        },
+
+        {
+            "nome": "Playstation 4 Pro",
+            "valor": 1850.99,
+            "categoria": "Consoles"
+        },
+        {
+            "nome": "Playstation 4",
+            "valor": 1300.90,
+            "categoria": "Consoles"
+        },
+        {
+            "nome": "Xbox One",
+            "valor": 1074.90,
+            "categoria": "Consoles"
+        },
+        {
+            "nome": "Xbox One X",
+            "valor": 2650.55,
+            "categoria": "Consoles"
+        },
+        {
+            "nome": "Nintendo Switch",
+            "valor": 1400.00,
+            "categoria": "Consoles"
+        }
+    ]

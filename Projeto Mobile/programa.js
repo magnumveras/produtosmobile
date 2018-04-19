@@ -68,7 +68,7 @@ appdesc.controller('descricao', function($scope, $http){
         ];
         
 
-        window.sessionStorage.setItem('itemcarrinho', JSON.stringify($scope.itemcarrinho));    
+        window.localStorage.setItem('itemcarrinho', JSON.stringify($scope.itemcarrinho));    
         window.location.href='carrinho.html';
         //alert(nomeproduto + " " + valorproduto + " " + produtoqtd + " " + valortotal);
         //alert($scope.itemcarrinho[0].nome + " " + $scope.itemcarrinho[0].valortotal);
@@ -79,16 +79,14 @@ appdesc.controller('descricao', function($scope, $http){
 //Controller de carrinho
 var appcar = angular.module("ProdutoCarrinho", []);
 
-//var arraycarrinho;
-appcar.controller('carrinho', function($scope, $http){
-    $scope.carrinho = [];
 
-    $scope.init = function(){                   
-        $scope.carrinho = JSON.parse(window.sessionStorage.getItem('itemcarrinho'));
+appcar.controller('carrinho', function($scope, $http){
+
+    $scope.init = function(){
+        $scope.carrinho = []                   
+        $scope.carrinho = JSON.parse(window.localStorage.getItem('itemcarrinho'));
 
         //alert(arraycarrinho[0].nomeproduto);
-
-        window.sessionStorage.removeItem('itemcarrinho');
     }
     $scope.init();
     

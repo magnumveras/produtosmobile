@@ -26,11 +26,11 @@
                 <h3>Filtros</h3>
                 <form action="#">
                     <div class="form-group">
-                        <label for="preco-min">Preço Mínimo: R$ {{min}}</label>
+                        <label for="preco-min">Preço Mínimo <br>{{min | currency:'R$'}}</label>
                         <input type="range" id="preco-min" class="form-control" min="0" max="2000" value="0" ng-model="min"/>
                     </div>
                     <div class="form-group">
-                        <label for="preco-max">Preço Máximo: R$ {{max}}</label>
+                        <label for="preco-max">Preço Máximo <br>{{max | currency:'R$'}}</label>
                         <input type="range" id="preco-max" class="form-control" min="0" max="2000" value="2000" ng-model="max"/>
                     </div>
                     <div class="form-group">
@@ -51,13 +51,13 @@
             <div class="col-12 col-sm-10 produtos text-center col-offset-2">
                 <div class = "row">
                     <div class="col-12 col-sm-4" ng-repeat="p in produtos | orderBy: 'nome' |  filter:search | filter: minmax | filter: categoria ">
-                        <form class="rounded form-group">
-                        <div class="card" style="width: 15rem; height: 25rem">
+                        <form class="rounded form-group d-flex justify-content-center">
+                        <div class="card" style="width: 15rem; height: 23rem">
                           <!-- img class="card-img-top" src="..." alt="Card image cap" -->
                             <div class="card-body">
                               <h5 class="card-title">{{p.nome}}</h5>
                               <p class="card-text">{{p.categoria}}</p>
-                              <img ng-src="{{p.foto}}" alt="{{p.nome}}" class="img-responsive img-thumbnail" width="130" height="150">
+                              <img ng-src="{{p.foto}}" alt="{{p.nome}}" class="img-responsive img-thumbnail" width="100" height="120">
                               <p class="card-text">{{p.valor | currency:'R$'}}</p>
                               <a href="descricao.html" ng-click= "selecionar(p.nome)"class="btn btn-primary btn-block">Descrição</a>
                             </div>

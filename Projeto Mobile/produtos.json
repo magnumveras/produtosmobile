@@ -1,144 +1,128 @@
 [
-        {
-            "nome": "God of War",
-            "valor": 215.99,
-            "categoria": "Jogos",
-            "desc": "God of War é uma série de jogos eletrônicos de ação-aventura vagamente baseado nas mitologias grega e nórdica criada por David Jaffe. Iniciada em 2005, a série tornou-se carro-chefe para a marca PlayStation, que consiste em sete jogos em várias plataformas. Um oitavo título está em desenvolvimento",
-            "foto": "https://i.pinimg.com/originals/be/9d/0d/be9d0df86f3e49059cfa1345cf980e15.jpg"
-        },
-        {
-            "nome": "Far Cry 5",
-            "valor": 215.99,
-            "categoria": "Jogos",
-            "desc": "Far Cry 5 é um jogo eletrônico de tiro em primeira pessoa jogado em mundo aberto que foi produzido pela Ubisoft Montreal juntamente com a Ubisoft Red Storm, a Ubisoft Toronto, a Ubisoft Shanghai e a Ubisoft Kiev",
-            "foto": "https://upload.wikimedia.org/wikipedia/pt/9/94/Far_cry_5_cover.jpg"
-        },
-        {
-            "nome": "GTA V",
-            "valor": 99.21,
-            "categoria": "Jogos",
-            "desc": "Grand Theft Auto V é um jogo eletrônico de ação-aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games. ",
-            "foto": "https://vignette.wikia.nocookie.net/gtawiki/images/7/76/CoverArt-GTAV.png/revision/20130826184115"
-        },
-        {
-            "nome": "Overwatch",
-            "valor": 150.99,
-            "categoria": "Jogos",
-            "desc": "Overwatch é um jogo eletrônico multijogador de tiro em primeira pessoa desenvolvido e publicado pela Blizzard Entertainment. Revelado na BlizzCon de 2014, o jogo enfatiza a jogabilidade cooperativa usando um elenco de vários 'heróis', cada um com suas próprias habilidades e funções dentro de uma equipe.",
-            "foto": "https://criticalhits.com.br/wp-content/uploads/2016/03/overwatch-cover.jpg"
-        },
-        {
-            "nome": "Assassins Creed Origins",
-            "valor": 150.99,
-            "categoria": "Jogos",
-            "desc": "Assassin's Creed Origins é um jogo eletrônico de ação-aventura, produzido pela Ubisoft Montreal e publicado pela Ubisoft. É o décimo título principal da série Assassin's Creed e tem lançamento previsto para 27 de Outubro de 2017, para Microsoft Windows, PlayStation 4 e Xbox One.",
-            "foto": "https://cdn.europosters.eu/image/1300/49105.jpg"
-        },
-        {
-            "nome": "Outlast 2",
-            "valor": 70.99,
-            "categoria": "Jogos",
-            "desc": "É a sequência do jogo eletrônico de 2013 Outlast e apresenta um jornalista chamado Blake Langermann, junto com sua esposa Lynn, percorrendo o deserto do Arizona para explorar o assassinato de uma mulher grávida, apenas conhecida como Jane Doe",
-            "foto": "data:image/jpeg;base64,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"
-        },
-        {
-            "nome": "The Legend Of Zelda Breath Of The Wild",
-            "valor": 250.00,
-            "categoria": "Jogos",
-            "desc": "É o décimo nono título da série The Legend of Zelda e foi lançado mundialmente para Wii U e Nintendo Switch em 3 de março de 2017. A história segue o protagonista Link, que acorda em uma Hyrule devastada após cem anos de sono e precisa recuperar suas memórias e derrotar o grande mal causado pela chegada de Calamity Ganon.",
-            "foto": "https://upload.wikimedia.org/wikipedia/pt/thumb/6/67/Zelda_-_Breath_of_the_Wild.png/265px-Zelda_-_Breath_of_the_Wild.png"
-        },
-        {
-            "nome": "Destiny 2",
-            "valor": 200.00,
-            "categoria": "Jogos",
-            "desc": "A história de Destiny decorre num período de setecentos anos no futuro, num ambiente pós-apocalíptico, num universo onde os humanos se espalharam e começaram a colonizar planetas no Sistema Solar. Um evento conhecido como 'o Colapso' fez as colónias desaparecerem misteriosamente, pondo um fim à chamada Era Dourada, e colocando a humanidade muito perto da extinção.",
-            "foto": "https://www.qbd.com.au/img/products/0/9781683831112.jpg"
-        },
-        {
-            "nome": "Dark Souls 3",
-            "valor": 100.99,
-            "categoria": "Jogos",
-            "desc": "Dark Souls III recebeu aclamação por parte da critica especializada. Os elogios focarem-se sobretudo nos visuais e nas mecânicas de combate, fazendo lembrar o ritmo rápido de Bloodborne, o jogo anterior da From Software. No site de análises agregadas Metacritic a versão Microsoft Windows conseguiu a pontuação de 90/100, o que indica “aclamação universal”.",
-            "foto": "https://guides.gamepressure.com/gfx/box/574.jpg"
-        },
-
-        {
-            "nome": "Controle Playstation 4",
-            "valor": 140.00,
-            "categoria": "Acessórios",
-            "desc": "Afastando-se da arquitectura Cell da sua antecessora, a PlayStation 4 é a primeira da série da Sony que apresenta arquitectura x86, mais especificamente uma Unidade de Processamento Acelerado AMD x86-64, uma plataforma amplamente usada e comum em muitos dos PCs modernos.",
-            "foto": "https://images-na.ssl-images-amazon.com/images/I/61%2B3POHXizL._SL1000_.jpg"
-        },
-        {
-            "nome": "Controle Xbox One",
-            "valor": 125.75,
-            "categoria": "Acessórios",
-            "desc": "O Xbox One apresenta jogos com gráficos de alta definição superiores aos vistos no seu antecessor e similares aos apresentados pelo seu maior concorrente, o PlayStation 4.",
-            "foto": "https://compass-ssl.xbox.com/assets/d3/d8/d3d83d26-d0df-49b8-9ad2-f213425a091d.jpg?n=X1-Wireless-Controller-Black_Gallery_1056x594_02.jpg"
-        },
-        {
-            "nome": "Teclado Hyperx Alloy FPS",
-            "valor": 560.00,
-            "categoria": "Acessórios",
-            "desc": "Teclado Gamer última geração",
-            "foto": "https://cdn.iset.io/assets/00665/produtos/1980/2.jpg"
-        },
-        {
-            "nome": "Mouse Corsair Harpoon RGB",
-            "valor": 160.00,
-            "categoria": "Acessórios",
-            "desc": "Mouse Gamer última geração",
-            "foto": "https://http2.mlstatic.com/mouse-corsair-harpoon-rgb-gaming-usb-optical-250-6000-dpi-D_NQ_NP_656488-MLB26209854195_102017-F.jpg"
-        },
-        {
-            "nome": "Headset Razer Kraken Pro",
-            "valor": 300.90,
-            "categoria": "Acessórios",
-            "desc": "Headset de última tecnologia perfeito para deixar seu ambiente de jogo muito mais real!",
-            "foto": "https://assets.razerzone.com/eeimages/products/25976/kraken_pro_v2_og_image.jpg"
-        },
-
-        {
-            "nome": "Playstation 4 Pro",
-            "valor": 1850.99,
-            "categoria": "Consoles",
-            "desc": "O PlayStation 4 Pro ou simplesmente PS4 Pro (anunciado originalmente com o codinome Neo) também foi revelado em 7 de Setembro de 2016. Seu modelo tem o número de linha CUH-7000. ",
-            "foto": "https://www.meups4.com.br/wp-content/uploads/2018/02/PS4-Pro.jpg"
-        },
-        {
-            "nome": "Playstation 4",
-            "valor": 1300.90,
-            "categoria": "Consoles",
-            "desc": " A PlayStation 4 é a primeira consola da Sony a ser oficialmente e legalmente editada na China desde a PlayStation 2, depois do levantamento da proibição que durou 14 anos. A PlayStation 4 compete directamente com a Wii U da Nintendo e com a Xbox One da Microsoft, como uma das consolas da oitava geração.",
-            "foto" : "https://rsesporte.com/wp-content/uploads/2016/09/PS4-Sales-730x411.jpg"
-        },
-        {
-            "nome": "Xbox One",
-            "valor": 1074.90,
-            "categoria": "Consoles",
-            "desc": "O Xbox One foi anunciado no dia 21 de maio de 2013, apresentado ao público pelo presidente de negócios de entretenimento interativo da Microsoft, Don Mattrick, em um evento dchamado Xbox Reveal, como o sucessor do Xbox 360. Ele compete com o Nintendo Wii U e o PlayStation 4.",
-            "foto": "https://i4.zst.com.br/images/console-xbox-one-1-tb-microsoft-photo58701855-12-22-18.jpg"
-        },
-        {
-            "nome": "Xbox One X",
-            "valor": 2650.55,
-            "categoria": "Consoles",
-            "desc": "Xbox One X",
-            "foto": "https://tecnoblog.net/wp-content/uploads/2017/06/xbox-one-x-700x375.jpg"
-        },
-        {
-            "nome": "Nintendo Switch",
-            "valor": 1400.00,
-            "categoria": "Consoles",
-            "desc": "O Switch se trata de um console híbrido semelhante a um tablet, o qual pode ser acoplado a um dock e, assim, ser transformado em um console de mesa. O console também conta com dois controles sem fio acopláveis de cada lado, chamados pela Nintendo de Joy-Con, que podem ser usados individualmente ou ser acoplados à unidade principal (no modo portátil) ou a uma base semelhante a um gamepad (no modo caseiro)",
-            "foto": "https://cdn.vox-cdn.com/thumbor/w6oWEMWoWwK28x32HJQHJforYCI=/0x0:2040x1360/1200x800/filters:focal(408x531:734x857)/cdn.vox-cdn.com/uploads/chorus_image/image/59008631/jbareham_170221_1475_0075.0.jpg"
-        },
-        {
-            "nome": "Mario Odyssey",
-            "valor": 250.00,
-            "categoria": "Jogos",
-            "desc": "Super Mario Odyssey é um jogo de plataforma desenvolvido pela Nintendo Entertainment Planning & Development e publicado pela Nintendo. Foi lançado mundialmente em 27 de outubro de 2017 exclusivamente para o Nintendo Switch.",
-            "foto": "data:image/jpeg;base64,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"
-        }
-    ]
+  {
+    "nome": "God of War",
+    "valor": 215.99,
+    "categoria": "Jogos",
+    "desc": "God of War é uma série de jogos eletrônicos de ação-aventura vagamente baseado nas mitologias grega e nórdica criada por David Jaffe. Iniciada em 2005, a série tornou-se carro-chefe para a marca PlayStation, que consiste em sete jogos em várias plataformas. Um oitavo título está em desenvolvimento",
+    "foto": "https://www.gamescenter.sk/69056-tm_home_default/god-of-war.jpg"
+  },
+  {
+    "nome": "Far Cry 5",
+    "valor": 215.99,
+    "categoria": "Jogos",
+    "desc": "Far Cry 5 é um jogo eletrônico de tiro em primeira pessoa jogado em mundo aberto que foi produzido pela Ubisoft Montreal juntamente com a Ubisoft Red Storm, a Ubisoft Toronto, a Ubisoft Shanghai e a Ubisoft Kiev",
+    "foto": "http://kinoflux.org/uploads/posts/2018-03/1521043573_far-kray-5-za-vratami-edema-2018-far-cry-5-inside-edens-gate.jpg"
+  },
+  {
+    "nome": "GTA V",
+    "valor": 99.21,
+    "categoria": "Jogos",
+    "desc": "Grand Theft Auto V é um jogo eletrônico de ação-aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games. ",
+    "foto": "http://www.cheat-gta.com/images/gta-images/gta_42.jpg"
+  },
+  {
+    "nome": "Overwatch",
+    "valor": 150.99,
+    "categoria": "Jogos",
+    "desc": "Overwatch é um jogo eletrônico multijogador de tiro em primeira pessoa desenvolvido e publicado pela Blizzard Entertainment. Revelado na BlizzCon de 2014, o jogo enfatiza a jogabilidade cooperativa usando um elenco de vários 'heróis', cada um com suas próprias habilidades e funções dentro de uma equipe.",
+    "foto": "https://static.mydealz.de/live/threads/thread_large/default/1096387_1.jpg"
+  },
+  {
+    "nome": "Assassins Creed Origins",
+    "valor": 150.99,
+    "categoria": "Jogos",
+    "desc": "Assassin's Creed Origins é um jogo eletrônico de ação-aventura, produzido pela Ubisoft Montreal e publicado pela Ubisoft. É o décimo título principal da série Assassin's Creed e tem lançamento previsto para 27 de Outubro de 2017, para Microsoft Windows, PlayStation 4 e Xbox One.",
+    "foto": "https://cdn.europosters.eu/image/1300/49105.jpg"
+  },
+  {
+    "nome": "Outlast 2",
+    "valor": 70.99,
+    "categoria": "Jogos",
+    "desc": "É a sequência do jogo eletrônico de 2013 Outlast e apresenta um jornalista chamado Blake Langermann, junto com sua esposa Lynn, percorrendo o deserto do Arizona para explorar o assassinato de uma mulher grávida, apenas conhecida como Jane Doe",
+    "foto": "https://3.bp.blogspot.com/-G42dpNfY58I/WREr1v4Wv3I/AAAAAAAAAn0/dRfVGXMU17oyWtU2EjCV77d1HLr2_nRwgCLcB/s1600/Outlast-2-Capa-200x280.jpg"
+  },
+  {
+    "nome": "The Legend Of Zelda Breath Of The Wild",
+    "valor": 250.00,
+    "categoria": "Jogos",
+    "desc": "É o décimo nono título da série The Legend of Zelda e foi lançado mundialmente para Wii U e Nintendo Switch em 3 de março de 2017. A história segue o protagonista Link, que acorda em uma Hyrule devastada após cem anos de sono e precisa recuperar suas memórias e derrotar o grande mal causado pela chegada de Calamity Ganon.",
+    "foto": "http://melollevobarato.com/wp-content/uploads/2017/11/top-10-mejores-juegos-tipo-sandbox-15-e1510772680530.jpg"
+  },
+  {
+    "nome": "Destiny 2",
+    "valor": 200.00,
+    "categoria": "Jogos",
+    "desc": "A história de Destiny decorre num período de setecentos anos no futuro, num ambiente pós-apocalíptico, num universo onde os humanos se espalharam e começaram a colonizar planetas no Sistema Solar. Um evento conhecido como 'o Colapso' fez as colónias desaparecerem misteriosamente, pondo um fim à chamada Era Dourada, e colocando a humanidade muito perto da extinção.",
+    "foto": "https://vgcollect.com/images/front-box-art/134792.jpg"
+  },
+  {
+    "nome": "Dark Souls 3",
+    "valor": 100.99,
+    "categoria": "Jogos",
+    "desc": "Dark Souls III recebeu aclamação por parte da critica especializada. Os elogios focarem-se sobretudo nos visuais e nas mecânicas de combate, fazendo lembrar o ritmo rápido de Bloodborne, o jogo anterior da From Software. No site de análises agregadas Metacritic a versão Microsoft Windows conseguiu a pontuação de 90/100, o que indica “aclamação universal”.",
+    "foto": "http://igrigo.net/uploads/posts/2015-12/thumbs/1449523890_dark-souls-3.jpg"
+  },
+  {
+    "nome": "Controle Playstation 4",
+    "valor": 140.00,
+    "categoria": "Acessórios",
+    "desc": "Afastando-se da arquitectura Cell da sua antecessora, a PlayStation 4 é a primeira da série da Sony que apresenta arquitectura x86, mais especificamente uma Unidade de Processamento Acelerado AMD x86-64, uma plataforma amplamente usada e comum em muitos dos PCs modernos.",
+    "foto": "b.jpg"
+  },
+  {
+    "nome": "Controle Preto Xbox One",
+    "valor": 125.75,
+    "categoria": "Acessórios",
+    "desc": "O Xbox One apresenta jogos com gráficos de alta definição superiores aos vistos no seu antecessor e similares aos apresentados pelo seu maior concorrente, o PlayStation 4.",
+    "foto": "c.jpg"
+  },
+  {
+    "nome": "Headset Razer Kraken Pro",
+    "valor": 300.90,
+    "categoria": "Acessórios",
+    "desc": "Headset de última tecnologia perfeito para deixar seu ambiente de jogo muito mais real!",
+    "foto": "https://www.gamescenter.sk/30904-tm_home_default/nahlavni-sada-trust-como-headset.jpg"
+  },
+  {
+    "nome": "Playstation 4 Pro",
+    "valor": 1850.99,
+    "categoria": "Consoles",
+    "desc": "O PlayStation 4 Pro ou simplesmente PS4 Pro (anunciado originalmente com o codinome Neo) também foi revelado em 7 de Setembro de 2016. Seu modelo tem o número de linha CUH-7000. ",
+    "foto": "https://www.gamescenter.sk/15349-tm_home_default/playstation-4-pro.jpg"
+  },
+  {
+    "nome": "Playstation 4",
+    "valor": 1300.90,
+    "categoria": "Consoles",
+    "desc": " A PlayStation 4 é a primeira consola da Sony a ser oficialmente e legalmente editada na China desde a PlayStation 2, depois do levantamento da proibição que durou 14 anos. A PlayStation 4 compete directamente com a Wii U da Nintendo e com a Xbox One da Microsoft, como uma das consolas da oitava geração.",
+    "foto": "https://i.pinimg.com/736x/4c/a1/1a/4ca11a49837400adc885fdef943d404d--ps-console-sony-ps.jpg"
+  },
+  {
+    "nome": "Xbox One",
+    "valor": 1074.90,
+    "categoria": "Consoles",
+    "desc": "O Xbox One foi anunciado no dia 21 de maio de 2013, apresentado ao público pelo presidente de negócios de entretenimento interativo da Microsoft, Don Mattrick, em um evento dchamado Xbox Reveal, como o sucessor do Xbox 360. Ele compete com o Nintendo Wii U e o PlayStation 4.",
+    "foto": "https://www.gamescenter.sk/14713-tm_home_default/xbox-one-s-500gb-biela.jpg"
+  },
+  {
+    "nome": "Xbox One X",
+    "valor": 2650.55,
+    "categoria": "Consoles",
+    "desc": "Xbox One X",
+    "foto": "https://tecnoblog.net/wp-content/uploads/2017/06/xbox-one-x-700x375.jpg"
+  },
+  {
+    "nome": "Nintendo Switch",
+    "valor": 1400.00,
+    "categoria": "Consoles",
+    "desc": "O Switch se trata de um console híbrido semelhante a um tablet, o qual pode ser acoplado a um dock e, assim, ser transformado em um console de mesa. O console também conta com dois controles sem fio acopláveis de cada lado, chamados pela Nintendo de Joy-Con, que podem ser usados individualmente ou ser acoplados à unidade principal (no modo portátil) ou a uma base semelhante a um gamepad (no modo caseiro)",
+    "foto": "https://www.gamescenter.sk/26428-tm_home_default/nintendo-switch-console-with-gray-joy-con.jpg"
+  },
+  {
+    "nome": "Mario Odyssey",
+    "valor": 250.00,
+    "categoria": "Jogos",
+    "desc": "Super Mario Odyssey é um jogo de plataforma desenvolvido pela Nintendo Entertainment Planning & Development e publicado pela Nintendo. Foi lançado mundialmente em 27 de outubro de 2017 exclusivamente para o Nintendo Switch.",
+    "foto": "https://www.gamescenter.sk/58786-tm_home_default/switch-super-mario-odyssey.jpg"
+  }
+]

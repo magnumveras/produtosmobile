@@ -71,7 +71,7 @@ appdesc.controller('descricao', function($scope, $http){
         if(JSON.parse(window.sessionStorage.getItem('itemcarrinho'))){
             var itens = [];
             itens = JSON.parse(window.sessionStorage.getItem('itemcarrinho'))
-            
+
             for(var i = 0; i < itens.length; i++){
                 arrayList.push(itens[i]);
             }
@@ -97,8 +97,11 @@ appcar.controller('carrinho', function($scope, $http){
         //alert(arraycarrinho[0].nomeproduto);
     }
     $scope.init();
-    alert(arraycarrinho[0].nome);
+    //alert(arraycarrinho[0].nome);
+
+
     //Laço para preenchimento de tabela
+    var valor = 0;
     for(var i = 0; i < arraycarrinho.length; i++){
         var html = '<th>' + arraycarrinho[i].nome + '</th>' + 
                    '<th>' + arraycarrinho[i].valorunitario + '</th>' +
@@ -106,6 +109,8 @@ appcar.controller('carrinho', function($scope, $http){
                    '<th>' + arraycarrinho[i].valortotal + '</th>' +
                    '<th scope="row"><button type="button" class="btn btn-danger">X</button>'
         
+        valor += parseInt(arraycarrinho[i].valortotal);
+        $scope.valorgeral = valor;
         $("#bodytabela").append('<tr>' + html + '</tr>');
     }
 

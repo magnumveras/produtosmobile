@@ -67,10 +67,11 @@ appdesc.controller('descricao', function($scope, $http){
             },
         ];
         arrayList.push($scope.itemcarrinho[0]);
+
         if(JSON.parse(window.sessionStorage.getItem('itemcarrinho'))){
             var itens = [];
             itens = JSON.parse(window.sessionStorage.getItem('itemcarrinho'))
-
+            
             for(var i = 0; i < itens.length; i++){
                 arrayList.push(itens[i]);
             }

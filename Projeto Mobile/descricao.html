@@ -24,18 +24,21 @@
                 <div class="row">
                     <div class="col-12 col-sm-6">
                         <form action="#">
-                            <div class="detalhesprod form-group">
-                                <div class="nomeproduto">
+                            <div class="detalhesprod form-group ">
+                                <div class="nomeproduto d-flex justify-content-center">
                                     <label for="nomeproduto" ng-model="produtodesc.nome">Nome: {{produtodesc.nome}}</label>
                                 </div>
-                                <div class="valorproduto">
-                                    <label for="valorproduto" ng-model="produtodesc.valor">Preço: R$ {{produtodesc.valor}}</label>
+                                <div class="imagemproduto d-flex justify-content-center">
+                                    <img ng-src="{{produtodesc.foto}}" alt="{{produtodesc.nome}}" class="img-responsive img-thumbnail" width="140" height="160">
                                 </div>
-                                <div class="categoriaproduto">       
+                                <div class="valorproduto d-flex justify-content-center">
+                                    <label for="valorproduto" ng-model="produtodesc.valor">Preço: {{produtodesc.valor | currency:'R$'}}</label>
+                                </div>
+                                <div class="categoriaproduto d-flex justify-content-center">
                                     <label for="categoriaproduto" ng-model="produtodesc.categoria">Categoria: {{produtodesc.categoria}}</label>
                                 </div>
-                                <div class="qtdproduto form-inline form-group">
-                                    <label for="qtdproduto">Quantidade: </label>
+                                <div class="qtdproduto form-inline form-group d-flex justify-content-center">
+                                    <label for="qtdproduto">Quantidade: &nbsp;</label>
                                     <input type="number" min="0" class="form-control" id="qtdproduto" ng-model="produtoQtd">
                                 </div>
                                 <div class="input-group-append">

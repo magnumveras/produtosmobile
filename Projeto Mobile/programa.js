@@ -66,15 +66,34 @@ appdesc.controller('descricao', function($scope, $http){
                 "valortotal": valortotal
             },
         ];
-        arrayList.push($scope.itemcarrinho[0]);
+        alert(verifica);
 
         if(JSON.parse(window.sessionStorage.getItem('itemcarrinho'))){
             var itens = [];
-            itens = JSON.parse(window.sessionStorage.getItem('itemcarrinho'))
-
+            var verifica = false;
+            itens = JSON.parse(window.sessionStorage.getItem('itemcarrinho'));
+            
+            
             for(var i = 0; i < itens.length; i++){
                 arrayList.push(itens[i]);
             }
+            
+            //Verificar valores repetidos
+            for(var i = 0; i < itens.length; i++){
+                if(itens[i].nome === $scope.itemcarrinho[0].nome){
+                    itens[i].quantidade = parseInt(itens[i].quantidade) + parseInt($scope.itemcarrinho[0].quantidade);
+                    itens[i].valortotal = parseFloat(itens[i].valorunitario) * parseFloat(itens[i].quantidade);
+                    verifica = true;
+                }
+                
+            }
+            //Push digitado fica por último para assegurar que não seja digitado o mesmo produto de forma duplicada
+            //O mesmo verifica se não existe registro do produto já e faz a inclusão em caso negativo
+            if(verifica == false){
+                arrayList.push($scope.itemcarrinho[0]);
+            }
+        }else{
+            arrayList.push($scope.itemcarrinho[0]);
         }
         window.sessionStorage.setItem('itemcarrinho', JSON.stringify(arrayList));    
         window.location.href='carrinho.html';
@@ -109,7 +128,7 @@ appcar.controller('carrinho', function($scope, $http){
                    '<th>' + arraycarrinho[i].valortotal + '</th>' +
                    '<th scope="row"><button type="button" class="btn btn-danger">X</button>'
         
-        valor += parseInt(arraycarrinho[i].valortotal);
+        valor += parseFloat(arraycarrinho[i].valortotal);
         $scope.valorgeral = valor;
         $("#bodytabela").append('<tr>' + html + '</tr>');
     }

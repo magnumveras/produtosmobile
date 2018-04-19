@@ -127,7 +127,7 @@ appcar.controller('carrinho', function($scope, $http){
                    '<th>' + arraycarrinho[i].valorunitario + '</th>' +
                    '<th>' + arraycarrinho[i].quantidade +  '</th>' + 
                    '<th>' + arraycarrinho[i].valortotal + '</th>' +
-                   '<th scope="row"><button type="button" class="btn btn-danger" id="btexcluir' + [i] + '">X</button></th>'
+                   '<th scope="row"><button type="button" class="btn btn-danger" value="' + [i] + '" id="btexcluir' + [i] + '">X</button></th>'
         
         valor += parseFloat(arraycarrinho[i].valortotal);
         $scope.valorgeral = valor;
@@ -148,10 +148,11 @@ appcar.controller('carrinho', function($scope, $http){
             /*if(arraycarrinho[i].nome != arraynomes[i]){
                 arraysub.push(arraycarrinho[i]);
             }*/
-          
-            arraycarrinho.pop([i]);
+            var botao = $(this).val();
+            //alert(botao);
+            arraycarrinho.splice(botao, 1);
 
-            alert(arraycarrinho);
+            //alert(arraycarrinho);
             
             //Envia novo array para Sessão Itemcarrinho
             window.sessionStorage.setItem('itemcarrinho', JSON.stringify(arraycarrinho));    

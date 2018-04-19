@@ -66,7 +66,7 @@ appdesc.controller('descricao', function($scope, $http){
                 "valortotal": valortotal
             },
         ];
-        alert(verifica);
+    
 
         if(JSON.parse(window.sessionStorage.getItem('itemcarrinho'))){
             var itens = [];
@@ -95,6 +95,7 @@ appdesc.controller('descricao', function($scope, $http){
         }else{
             arrayList.push($scope.itemcarrinho[0]);
         }
+        
         window.sessionStorage.setItem('itemcarrinho', JSON.stringify(arrayList));    
         window.location.href='carrinho.html';
         //alert(nomeproduto + " " + valorproduto + " " + produtoqtd + " " + valortotal);
@@ -126,13 +127,38 @@ appcar.controller('carrinho', function($scope, $http){
                    '<th>' + arraycarrinho[i].valorunitario + '</th>' +
                    '<th>' + arraycarrinho[i].quantidade +  '</th>' + 
                    '<th>' + arraycarrinho[i].valortotal + '</th>' +
-                   '<th scope="row"><button type="button" class="btn btn-danger">X</button>'
+                   '<th scope="row"><button type="button" class="btn btn-danger" id="btexcluir' + [i] + '">X</button></th>'
         
         valor += parseFloat(arraycarrinho[i].valortotal);
         $scope.valorgeral = valor;
         $("#bodytabela").append('<tr>' + html + '</tr>');
     }
 
+     /*Captura nomes de cada item
+     var arraynomes = [];
+     for(var i = 0; i < arraycarrinho.length; i++){
+          arraynomes.push(arraycarrinho[i].nome);
+         
+     }*/
+
+    //Função excluir produto do carrinho
+    //var arrayexcluir = [];
+    for(var i = 0; i < arraycarrinho.length; i++){
+        $("#btexcluir" + [i]).click(function(){
+            /*if(arraycarrinho[i].nome != arraynomes[i]){
+                arraysub.push(arraycarrinho[i]);
+            }*/
+          
+            arraycarrinho.pop([i]);
+
+            alert(arraycarrinho);
+            
+            //Envia novo array para Sessão Itemcarrinho
+            window.sessionStorage.setItem('itemcarrinho', JSON.stringify(arraycarrinho));    
+            window.location.href='carrinho.html';   
+            alert("Item excluído com sucesso!");
+        });
+    }
 });
 
 $(document).ready(function(){

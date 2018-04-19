@@ -1,6 +1,5 @@
 var app = angular.module('loja', []);
 
-
 app.controller('principal', function($scope, $http){
 
 
@@ -21,7 +20,7 @@ app.controller('principal', function($scope, $http){
   $scope.categoria = $('#categorias').val();
 
   //Função Captura produto clicado
-  $scope.selecionar = function(nometela){                   
+  $scope.selecionar = function(nometela){                
     var i = 0;
     var a = false;
     while (i < $scope.produtos.length && a === false){
@@ -58,6 +57,7 @@ appdesc.controller('descricao', function($scope, $http){
 
     $scope.comprarproduto = function(nomeproduto, valorproduto, produtoqtd){
         var valortotal = valorproduto * produtoqtd;
+        var arrayList = [];
         $scope.itemcarrinho = [
             {
                 "nome": nomeproduto,
@@ -66,9 +66,16 @@ appdesc.controller('descricao', function($scope, $http){
                 "valortotal": valortotal
             },
         ];
-        
+        arrayList.push($scope.itemcarrinho[0]);
+        if(JSON.parse(window.sessionStorage.getItem('itemcarrinho'))){
+            var itens = [];
+            itens = JSON.parse(window.sessionStorage.getItem('itemcarrinho'))
 
-        window.localStorage.setItem('itemcarrinho', JSON.stringify($scope.itemcarrinho));    
+            for(var i = 0; i < itens.length; i++){
+                arrayList.push(itens[i]);
+            }
+        }
+        window.sessionStorage.setItem('itemcarrinho', JSON.stringify(arrayList));    
         window.location.href='carrinho.html';
         //alert(nomeproduto + " " + valorproduto + " " + produtoqtd + " " + valortotal);
         //alert($scope.itemcarrinho[0].nome + " " + $scope.itemcarrinho[0].valortotal);
@@ -81,21 +88,21 @@ var appcar = angular.module("ProdutoCarrinho", []);
 
 
 appcar.controller('carrinho', function($scope, $http){
-
+    var arraycarrinho = [];
     $scope.init = function(){
-        $scope.carrinho = []                   
-        $scope.carrinho = JSON.parse(window.localStorage.getItem('itemcarrinho'));
+
+        arraycarrinho = JSON.parse(window.sessionStorage.getItem('itemcarrinho'));
 
         //alert(arraycarrinho[0].nomeproduto);
     }
     $scope.init();
-    
+    alert(arraycarrinho[0].nome);
     //Laço para preenchimento de tabela
-    for(var i = 0; i < $scope.carrinho.length; i++){
-        var html = '<th>' + $scope.carrinho[i].nome + '</th>' + 
-                   '<th>' + $scope.carrinho[i].valorunitario + '</th>' +
-                   '<th>' + $scope.carrinho[i].quantidade +  '</th>' + 
-                   '<th>' + $scope.carrinho[i].valortotal + '</th>' +
+    for(var i = 0; i < arraycarrinho.length; i++){
+        var html = '<th>' + arraycarrinho[i].nome + '</th>' + 
+                   '<th>' + arraycarrinho[i].valorunitario + '</th>' +
+                   '<th>' + arraycarrinho[i].quantidade +  '</th>' + 
+                   '<th>' + arraycarrinho[i].valortotal + '</th>' +
                    '<th scope="row"><button type="button" class="btn btn-danger">X</button>'
         
         $("#bodytabela").append('<tr>' + html + '</tr>');
